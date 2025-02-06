@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #scroll-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-50 shadow-sm py-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="/" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Home</a>
+            <a href="/about" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">About</a>
+            <a href="/experience" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Experience</a>
+            <a href="/projects" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Projects</a>
+            <a href="/contact" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="text-center mb-8">
+            <p class="text-lg">Get to know More</p>
+            <h1 class="text-4xl font-bold">About Me</h1>
+        </div>
+        
+        <div class="flex flex-col md:flex-row items-center justify-center mb-8">
+            <div class="mb-8 md:mb-0 md:mr-8">
+                <img alt="Portrait" class="rounded-lg w-72 h-72 object-cover" src="https://storage.googleapis.com/a1aa/image/A7gxFyqnjn9dGfQZyNeGzkyL14TzeTj_WYUJeuNSjbU.jpg" width="300" height="300"/>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md w-80 text-center">
+                    <i class="fas fa-medal text-2xl mb-2"></i>
+                    <h2 class="text-xl font-bold">Experience</h2>
+                    <p>4 Years</p>
+                    <p>Corporate Communications Officer</p>
+                    <p>End-User Computing Specialist</p>
+                    <p>Media & Marketing officer</p>
+                    <p>Sales Consultant</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded-lg shadow-md w-80 text-center">
+                    <i class="fas fa-graduation-cap text-2xl mb-2"></i>
+                    <h2 class="text-xl font-bold">Education</h2>
+                    <p>Diploma: Marketing Management (Boston City Campus & Business College)</p>
+                    <p>Advanced Statistics For Data Science Certificate (John Hopkins University)</p>
+                    <p>Data science, NQF Level 5 (Initium Venture Solutions)</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center max-w-2xl mx-auto">
+            <p>
+                With expertise in Marketing, Communications, and Data analytics, I use data-driven insights to refine marketing strategies, elevate communication efforts, and deliver measurable results. My proficiency in graphic design and photography adds a creative flair to my work. My professional journey includes significant achievements in branding, event management, and sustainability reporting, with a focus on Supply Chain Management, ESD initiatives, and fostering small business growth.
+            </p>
+        </div>
+        
+        <!-- GitHub Contributions Section -->
+        <div class="github-contributions bg-gray-50 p-6 rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-bold mb-4">Days I <span class="text-blue-600">Code</span></h2>
+            <div class="github-calendar-container">
+                <!-- GitHub Contribution Graph -->
+                <img src="https://ghchart.rshah.org/2563eb/Shotbylu" alt="GitHub Contribution Chart" class="mx-auto max-w-full">
+                
+                <!-- GitHub Stats -->
+                <div class="github-stats grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+                    <div class="stat-item">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shotbylu&layout=compact&theme=default" alt="Top Languages" class="mx-auto">
+                    </div>
+                    <div class="stat-item">
+                        <img src="https://github-readme-stats.vercel.app/api?username=Shotbylu&show_icons=true&theme=default" alt="GitHub Stats" class="mx-auto">
+                    </div>
+                    <div class="stat-item">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Shotbylu&theme=default" alt="GitHub Streak" class="mx-auto">
+                    </div>
+                    <div class="stat-item">
+                        <img src="https://github-profile-trophy.vercel.app/?username=Shotbylu&theme=flat" alt="GitHub Trophies" class="mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="tech-stack bg-gray-100 p-6 rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
+            <div class="tech-icons-container grid grid-cols-4 md:grid-cols-7 gap-4 justify-center">
+                <div class="tech-icon"><i class="devicon-cplusplus-plain text-4xl"></i><p class="text-sm">C++</p></div>
+                <div class="tech-icon"><i class="devicon-javascript-plain text-4xl"></i><p class="text-sm">JavaScript</p></div>
+                <div class="tech-icon"><i class="devicon-go-plain text-4xl"></i><p class="text-sm">Go</p></div>
+                <div class="tech-icon"><i class="devicon-nodejs-plain text-4xl"></i><p class="text-sm">Node.js</p></div>
+                <div class="tech-icon"><i class="devicon-react-plain text-4xl"></i><p class="text-sm">React</p></div>
+                <div class="tech-icon"><i class="devicon-solidity-plain text-4xl"></i><p class="text-sm">Solidity</p></div>
+                <div class="tech-icon"><i class="devicon-mongodb-plain text-4xl"></i><p class="text-sm">MongoDB</p></div>
+                <div class="tech-icon"><i class="devicon-nextjs-plain text-4xl"></i><p class="text-sm">Next.js</p></div>
+                <div class="tech-icon"><i class="devicon-git-plain text-4xl"></i><p class="text-sm">Git</p></div>
+                <div class="tech-icon"><i class="devicon-firebase-plain text-4xl"></i><p class="text-sm">Firebase</p></div>
+                <div class="tech-icon"><i class="devicon-redis-plain text-4xl"></i><p class="text-sm">Redis</p></div>
+                <div class="tech-icon"><i class="devicon-postgresql-plain text-4xl"></i><p class="text-sm">PostgreSQL</p></div>
+                <div class="tech-icon"><i class="devicon-python-plain text-4xl"></i><p class="text-sm">Python</p></div>
+                <div class="tech-icon"><i class="devicon-java-plain text-4xl"></i><p class="text-sm">Java</p></div>
+            </div>
+        </div>
+
+        <!-- Tools Section -->
+        <div class="tool-stack bg-white p-6 rounded-lg shadow-md text-center">
+            <h2 class="text-2xl font-bold mb-4">Tools</h2>
+            <div class="tech-icons-container grid grid-cols-3 md:grid-cols-5 gap-4 justify-center">
+                <div class="tech-icon"><i class="devicon-apple-plain text-4xl"></i><p class="text-sm">macOS</p></div>
+                <div class="tech-icon"><i class="devicon-vscode-plain text-4xl"></i><p class="text-sm">VS Code</p></div>
+                <div class="tech-icon"><i class="fab fa-postman text-4xl"></i><p class="text-sm">Postman</p></div>
+                <div class="tech-icon"><i class="fab fa-slack text-4xl"></i><p class="text-sm">Slack</p></div>
+                <div class="tech-icon"><i class="devicon-vercel-plain text-4xl"></i><p class="text-sm">Vercel</p></div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-8">
+            <p>Explore My</p>
+            <i class="fas fa-chevron-down text-2xl mt-2"></i>
+        </div>
+    </div>
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            var scrollToTopBtn = document.getElementById('scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

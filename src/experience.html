@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #scroll-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-50 shadow-sm py-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="/" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Home</a>
+            <a href="/about" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">About</a>
+            <a href="/experience" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Experience</a>
+            <a href="/projects" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Projects</a>
+            <a href="/contact" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Experience Section -->
+    <div class="flex flex-col items-center justify-center min-h-screen px-4">
+        <div class="text-center mb-8">
+            <p class="text-gray-500">Explore My</p>
+            <h1 class="text-4xl font-bold">Experience</h1>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-center items-start space-y-4 md:space-y-0 md:space-x-8 w-full max-w-4xl">
+            <!-- Programming Languages and Frameworks -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md w-full relative">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-lg"></div>
+                <h2 class="text-xl font-semibold mb-4">Programming Languages and Frameworks</h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">HTML</span>
+                            <p class="text-sm text-gray-500">Competent</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">Java</span>
+                            <p class="text-sm text-gray-500">Competent</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">Python</span>
+                            <p class="text-sm text-gray-500">Intermediate</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-blue-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">Spring Boot</span>
+                            <p class="text-sm text-gray-500">Basic</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Development Tools and Technologies -->
+            <div class="bg-gray-100 p-6 rounded-lg shadow-md w-full relative">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-green-500 to-teal-500 rounded-t-lg"></div>
+                <h2 class="text-xl font-semibold mb-4">Development Tools and Technologies</h2>
+                <ul class="space-y-2">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">SQLite</span>
+                            <p class="text-sm text-gray-500">Basic</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">Docker</span>
+                            <p class="text-sm text-gray-500">Basic</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">CI/CD</span>
+                            <p class="text-sm text-gray-500">Familiar</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">VS Code</span>
+                            <p class="text-sm text-gray-500">Proficient</p>
+                        </div>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <div>
+                            <span class="font-bold">Git</span>
+                            <p class="text-sm text-gray-500">Proficient</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script>
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            var scrollToTopBtn = document.getElementById('scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

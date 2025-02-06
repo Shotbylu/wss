@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        #scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        #scroll-to-top:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Navigation -->
+    <nav class="bg-gray-50 shadow-sm py-4">
+        <div class="container mx-auto flex justify-center space-x-6">
+            <a href="/" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Home</a>
+            <a href="/about" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">About</a>
+            <a href="/experience" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Experience</a>
+            <a href="/projects" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Projects</a>
+            <a href="/contact" class="text-gray-800 font-medium transition hover:text-blue-600 hover:underline">Contact</a>
+        </div>
+    </nav>
+    
+    <!-- Contact Section -->
+    <main class="text-center flex flex-col items-center justify-center min-h-screen">
+        <div class="mb-8">
+            <p class="text-gray-500">Get in Touch</p>
+            <h1 class="text-4xl font-bold">Contact Me</h1>
+        </div>
+        
+        <div class="border rounded-full px-6 py-4 flex items-center space-x-4 mb-8">
+            <i class="fas fa-envelope text-xl"></i>
+            <span class="text-lg">lungelosibisi83@gmail.com</span>
+            <a href="https://www.linkedin.com/in/lungelo-sibisi-6745aa21b" target="_blank" class="flex items-center space-x-2">
+                <i class="fab fa-linkedin text-xl"></i>
+                <span class="text-lg">LinkedIn</span>
+            </a>
+        </div>
+        
+        <div class="flex space-x-8 mb-8">
+            <a href="/about" class="text-gray-700 hover:text-black">About</a>
+            <a href="/experience" class="text-gray-700 hover:text-black">Experience</a>
+            <a href="/projects" class="text-gray-700 hover:text-black">Projects</a>
+            <a href="/contact" class="text-gray-700 hover:text-black">Contact</a>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="text-gray-500 text-center py-4">
+        <p>&copy; 2024 Lungelo Sibisi <i class="fas fa-cat"></i></p>
+        <p>All Rights Reserved.</p>
+    </footer>
+    <button id="scroll-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Scroll to top function
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide scroll to top button
+        window.addEventListener('scroll', function() {
+            var scrollToTopBtn = document.getElementById('scroll-to-top');
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
